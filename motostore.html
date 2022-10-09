@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<!-- Google fonts -->
+<!-- Kanit -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,800;1,100&display=swap" rel="stylesheet">
+<!-- Raleway -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
+<!--Hamburger knap css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+<script src="hamburger.js"></script>
+<title>Motostore Project</title>
+</head>
+<body>
+       <!--Navigation-->
+<nav tabindex="0" class="grid-nav">
+    <div class="nav-logo">
+        <h4>MADS EMMERTSEN</h4>
+    </div>
+
+    <div class="nav-portfolio">
+        <p><a href="index.html">Portfolio</a></p>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="motostore.html">Motostore</a></li>
+                <li><a href="property-advice.html">Property Advice</a></li>
+                <li><a href="dailyui.html">DailyUI</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-about">
+        <p><a href="about.html">About me</a></p>
+    </div>
+    <!--Hamburger knap-->
+    <button class="nav-toggle" onclick="toggleNav()">
+        <i class="fas fa-bars"></i>
+        </button>
+</nav>
+<!--Navigation-->
+<div class="grid">
+            <!-- Dropdown for phone -->
+    <div class="links show" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="motostore.html">Motostore</a></li>
+            <li><a href="property-advice.html">Property Advice</a></li>
+            <li><a href="dailyui.html">DailyUI</a></li>
+            <li><a href="about.html">About me</a></li>
+        </ul>
+    </div>
+
+    <!---->
+    <div class="padding"></div>
+
+        <h1 class="title">MotoStore Mobile Check Out & Atomic Design</h1>
+        <p class="text">Since the start of may I have been working at Vilh. Nellemann Handelsselskab. Here I have been working on UI design for their webshop motostore.dk and their website honda-mc.dk. One of the assignments I have worked on is a new design for their checkout on motostore.dk</p>
+</div>
+<div class="padding"></div>
+<div class="grid">
+    <img src="images/motostore.png" alt="motorstore design on mobile phones" class="centered-img">
+</div>
+<div class="padding"></div>
+<div class="grid">
+    <p class="text">
+        After making a quick initial design I decided to read up on the best practices of mobile check out designs. I got some useful insights which impacted my design. Some of them I had already followed. Like using buttons for progressing as well as using a progress indicator to let the customer know that they aren't far away from making their purchase. </p>
+</div>
+<div class="padding"></div>
+<div class="grid">
+    <img src="images/motostore/fragt.png" alt="image of a comment box" class="twoimg-first">
+    <img src="images/motostore/progress.png" alt="image of a progress bar" class="twoimg-second">
+</div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">One of the insights I got was to eliminate distractions and keeping the design simple. This meant that I reduced the amount of visual clutter by removing color from the button "Ordredetaljer" and replacing it with a stroke aswell as removing colorful elements around titles and subtitles. By doing so it also increased the focus on progression buttons so it was actually two birds with one stone.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid-three-elements">
+        <img src="images/motostore/userflow-one.png" alt="userflow first image" class="threeimg-first">
+        <img src="images/motostore/userflow-two.png" alt="userflow second image" class="threeimg-second">
+        <img src="images/motostore/userflow-three.png" alt="userflow third image" class="threeimg-third">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            I was reminded of the power of social logins which made me incorporate facebook and google login butttons. I also learned that using floating labels with in form field is a great for the user experience as it will help remind the user what type of information they are supposed to type in.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/motostore/gif-kontaktinfo.gif" alt="gif of contactinformation" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <h2 class="subtitle">Atomic Design</h2>
+        <p class="text">Whilst doing this design i stumbled upon Atomic Design. It's a design philosophy that separates design elements into building blocks of increasing complexity. I tried applying this philosophy to my work space in figma. The most basic building blocks are Atoms. They consist of elements such as buttons, labels, form fields etc.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/motostore/atoms.png" alt="image of atoms used for designing the userflow" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/motostore/atoms-buttons.png" alt="image of the button design" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            Combining multiple of these atoms I created molecules which I put into a separate figma page.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/motostore/molecules.png" alt="image of the molecules used for the userflow" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            Further combining molecules and atoms created organisms.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/motostore/organisms.png" alt="image of organisms used for the userflow" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            These organisms I applied as building blocks to the final design. Some of them were had more complex interaction like dropdowns witin dropdowns. I learned a lot about auto layout and nested components when I had to make the organism for choosing the delivery method.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/motostore/Gif fragt.gif" alt="gif of the screen where you chose the delivery method" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            I definitely intend to use this design philosophy in future work as it makes doing changes to basic elements across multiple designs really fast as well as providing structure and overview of design elements. I can see how the benefits gets exponentially bigger as projects increase in size. </p>
+    </div>
+
+
+
+
+
+
+
+    <div class="padding"></div>
+    <div class="grid-nav">
+        <div class="contacts">
+            <p class="bold">Contact me</p>
+            <a href="https://www.linkedin.com/in/mads-emmertsen-398651181/" target="blank">
+                <img src="images/linkedinlogo.png" alt="linkedin logo" class="linkedinlogo">
+            </a>
+            <br>
+            <a href="mailto:madsemmertsen@gmail.com">madsemmertsen@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>
