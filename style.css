@@ -96,6 +96,16 @@ ul {
 li {
   margin: 6px 0;
 }
+.in-text-list {
+   list-style: circle;
+   list-style-position: outside;
+   font-family: "Raleway", sans-serif;
+   grid-row: 2 / 3;
+   grid-column: 4 / 11;
+}
+.in-text-list li {
+   margin: 20px;
+}
 /** Hamburger knap**/
 .nav-toggle {
    visibility: hidden;
@@ -330,6 +340,22 @@ li {
    -webkit-filter: drop-shadow(2px 2px 10px #222);
    filter: drop-shadow(2px 2px 10px #222);
 }
+.twoimg-first-hd360 {
+   grid-column: 3 / 7;
+   width: 100%;
+   max-height: 400px;
+   justify-self: center;
+   align-self: center;
+   padding-right: 2%;
+}
+.twoimg-second-hd360 {
+   grid-column: 7 / 11;
+   width: 100%;
+   max-height: 400px;
+   justify-self: center;
+   align-self: center;
+   padding-left: 2%;
+}
 .threeimg-first {
    grid-column: 2;
    width: auto;
@@ -378,6 +404,12 @@ li {
    }
    li {
       font-size: 0.8rem;
+   }
+   .in-text-list {
+      grid-column: 1 / 4;
+   }
+   .in-text-list li {
+      font-size: 1rem;
    }
    a {
       font-size: 0.8rem;
@@ -471,6 +503,15 @@ li {
       grid-column: 1 / 4;
       max-height: 300px;
       margin-top: 10%;
+   }
+   .twoimg-first-hd360 {
+      grid-column: 1 / 4;
+      max-height: 300px;
+   }
+   .twoimg-second-hd360 {
+      grid-column: 1 / 4;
+      max-height: 300px;
+      margin-top: 10%;   
    }
    .twoimg-twothird {
       grid-column: 1 / 3;
