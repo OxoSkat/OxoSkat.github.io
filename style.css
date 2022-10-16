@@ -118,10 +118,10 @@ li {
    height: auto;
    transform: translateX(0%);
    transition: transform 1s ease-in-out;
+   border-bottom:#222 solid 2px;
 }
 .links ul {
    text-align: center;
-   padding-bottom: 5%;
    z-index: 6;
 
 }
@@ -158,6 +158,7 @@ li {
  .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    object-fit: contain;
  }
  .gridtwo {
    display: grid;
@@ -307,7 +308,7 @@ li {
 }
 .centered-img {
    grid-column: 3 / 11;
-   width: auto;
+   max-width: 90%;
    max-height: 400px;
    justify-self: center;
 }
@@ -460,7 +461,7 @@ li {
    .centered-img, .project-img-box {
       grid-column: 1 / 4;
       max-height: 300px;
-      max-width: 480px;
+      max-width: 90%;
    }
    .twoimg-first {
       grid-column: 1 / 4;
