@@ -122,10 +122,12 @@ li {
 .links ul {
    text-align: center;
    padding-bottom: 5%;
+   z-index: 6;
 
 }
 .links li {
    margin: 20px 0;
+   z-index: 7;
 }
 /** **/
 
@@ -213,7 +215,7 @@ li {
     width: auto;
     height: auto;
     position: relative;
-    max-width: 1200px;
+    max-width: 90%;
     max-height: 400px;
     margin: auto;
     z-index: -1;
@@ -433,7 +435,7 @@ li {
       grid-template-columns: 1 / 4;
    }
    .project-img {
-      max-width: 500px;
+      max-width: 90%;
       max-height: 200px;
    }
    .linkbox {
