@@ -106,7 +106,7 @@ li {
 }
 /** Dropdown for phone**/
 .show {
-   transform: translateX(-100%) !important;
+   transform: translateX(-110%) !important;
    transition: transform 1s ease-in-out;
 }
 .links {
