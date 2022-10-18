@@ -409,7 +409,7 @@ li {
       grid-column: 1 / 4;
    }
    .in-text-list li {
-      font-size: 1rem;
+      font-size: 1srem;
    }
    a {
       font-size: 0.8rem;
@@ -577,26 +577,46 @@ li {
    }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1919px) {
    .title {
       grid-column: 3 / 10;
    }
    p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
    }
    h1 {
-      font-size: 80px;
+      font-size: 2rem;
+   }
+   a {
+      font-size: 1.2rem;
    }
    .text-middle h1 {
-      font-size: 80px;
+      font-size: 1.8rem;
    }
-
+   h4 {
+      font-size: 1.2rem !important;
+   }
+   .text {
+      grid-column: 4 / 10;
+   }
+   .title {
+      grid-column: 4 / 10;
+   }
+   .subtitle {
+      grid-column: 4 / 10;
+   }
+   .in-text-list li {
+      font-size: 1.2rem;
+   }
    .project-img {
       max-width: 1200px;
-      max-height: 800px;
+      max-height: 400px;
+      justify-self: center;
    }
    .grid-nav {
       grid-template-columns: repeat(7, 1fr);
+      align-items: center;
+      justify-items: center;
    }
    .nav-logo h4 {
       font-size: 2rem;
@@ -608,23 +628,39 @@ li {
       grid-column: 6 / 7;
    }
    li {
-      font-size: 2rem;
+      font-size: 1.5rem;
    }
    .centered-img, .twoimg-first, .twoimg-second, .threeimg-first, .threeimg-second, .threeimg-third {
-      max-height: 800px;
+      max-height: 400px;
    }
    .twoimg-onethird {
-      grid-column: 9 / 11;
-      max-height: 800px;
+      grid-column: 9 / 10;
+      max-height: 400px;
       justify-self: left;
    }
    .twoimg-twothird {
-      grid-column: 3 / 8;
-      max-height: 800px;
+      grid-column: 4 / 8 !important;
+      max-height: 400px;
       justify-self: center;
    }
+   .text-about-one {
+      grid-column: 4 / 10;
+   }
    .text-about-two {
-      margin-top: -8%;
+      grid-column: 4 / 10;
+      margin-top: -3%;
+   }
+   .text-middle {
+      grid-column: 5 / 9;
+   }
+   .dailytitle {
+      text-align: center;
+   }
+   .twoimg-first-hd360 {
+      grid-column: 4 / 7;
+   }
+   .twoimg-second-hd360 { 
+      grid-column: 7 / 10;
    }
 }
 
@@ -639,4 +675,6 @@ li {
       max-height: 800px;
       justify-self: center;
    }
+
 }
+
