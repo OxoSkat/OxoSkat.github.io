@@ -322,6 +322,11 @@ li {
    max-height: 400px;
    justify-self: center;
 }
+.large-img {
+   grid-column: 3 / 11;
+   max-width: 100%;
+   max-height: 1000px;
+}
 .twoimg-first {
    grid-column: 3 / 7;
    width: auto;
@@ -495,6 +500,11 @@ li {
       max-height: 300px;
       max-width: 90%;
    }
+   .large-img {
+      grid-column: 1 / 4;
+      max-width: auto;
+      max-height: 600px;
+   }
    .twoimg-first {
       grid-column: 1 / 4;
       max-height: 300px;
@@ -632,6 +642,11 @@ li {
    }
    .centered-img, .twoimg-first, .twoimg-second, .threeimg-first, .threeimg-second, .threeimg-third {
       max-height: 400px;
+   }
+   .large-img {
+      grid-column: 4 / 10;
+      max-height: 1000px;
+      max-width: 100%;
    }
    .twoimg-onethird {
       grid-column: 9 / 10;
