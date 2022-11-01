@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<!-- Google fonts -->
+<!-- Kanit -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,800;1,100&display=swap" rel="stylesheet">
+<!-- Raleway -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
+<!--Hamburger knap css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+<script src="hamburger.js"></script>
+<title>Mads Emmertsen Portfolio</title>
+</head>
+<body>
+<!--Navigation-->
+<nav tabindex="0" class="grid-nav">
+    <div class="nav-logo">
+        <h4>MADS EMMERTSEN</h4>
+    </div>
+
+    <div class="nav-portfolio">
+        <p><a href="index.html">Portfolio</a></p>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="cs-aware.html">CS-Aware</a></li>
+                <li><a href="motostore.html">Motostore</a></li>
+                <li><a href="property-advice.html">Property Advice</a></li>
+                <li><a href="healthd360.html">HealthD360</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-about">
+        <p><a href="about.html">About me</a></p>
+    </div>
+    <!--Hamburger knap-->
+    <button class="nav-toggle" onclick="toggleNav()">
+        <i class="fas fa-bars"></i>
+        </button>
+</nav>
+<!--Navigation-->
+<!-- Dropdown for phone -->
+<div class="links show" id="mobileNav">
+    <ul>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="cs-aware.html">CS-Aware</a></li>
+        <li><a href="motostore.html">Motostore</a></li>
+        <li><a href="property-advice.html">Property Advice</a></li>
+        <li><a href="healthd360.html">HealthD360</a></li>
+        <li><a href="about.html">About me</a></li>
+    </ul>
+</div>
+<!---->
+<div class="grid">
+    <div class="padding"></div>        
+        <h1 class="title">
+            CS-Aware Cybersecurity Platform</h1>
+        <p class="text">During my 2 months internship at Rheasoft i worked on a design for their cyber security platform CS-Aware. A product that stands on a foundation of knowledge gained through the EU project CS-Aware and the current EU project CS-Aware Next. The CS-Aware platform tries to tackle multiple issues identified through the EU projects at once. These include a lack of collaboration and information sharing between critical entities with in a EU country, A lack of insights about ones own system and vulnerabilities with in that system (which does include the people operating with in it). And last but not least the tools to act in time when an incident happens.</p>
+        <span></span>
+        <p class="text">From their first EU project. Rheasoft had build a prototype which i was tasked to redesign and build upon. I decided to build the design for six screen sizes. One for desktops, one for laptops, one for each orientation on tablet and one for each orientation on mobile. </p>
+        <span></span>
+        <p class="text">I also decided to use the atomic design philosophy which i had gotten acquainted with during my time at motostore. I started by creating the small building blocks of the design beginning with the basics such as colors and typography.</p>
+        <div class="padding"></div>
+</div>
+<div class="grid">
+    <img src="images/cs-aware/typography.png" alt="typography used in the cs-aware project" class="centered-img">
+    <div class="padding"></div>
+    <img src="images/cs-aware/colors.png" alt="colors used in the cs-aware project" class="centered-img">
+</div>
+<div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            I created a group of buttons and gathered resources i would need for the design like icons and different logos.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/buttons.png" alt="buttons used in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/tab-button.png" alt="tab buttons used in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/icons.png" alt="icons used in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            There are many more components than this but instead of showcasing this project in full detail i would rather take you through the general design steps i took.</p>
+        <span></span>
+        <p class="text">In truth i oscilated between designing the pages and creating the basic components i needed on the go. But i always kept to the atomic design philosophy so that when i needed a basic component i would to the “Atoms” page and design it there as a component and then bring that component in to the page where i needed to use it. This strict design discipline is something that i started to lack in the final weeks of my internship and the importance of that discipline is a lesson that i bring with me from my time a Rheasoft.</p>
+        <span></span>
+        <p class="text">I very quickly needed to turn some of these atoms into molecules that i could use on the final design. One of the first molecules i created was the navigation bar which consisted of two atoms; the bar and the icons to represent the different pages.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/navigation.png" alt="navigation components used to create the navigation bar" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/navigation-bar.png" alt="navigation bars used in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">
+            The molecules i created differed in complexity. Some where as simple as inputs fields and other where rather complex overlays building upon many atoms.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/input-field.png" alt="input fields used in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/node-description.png" alt="node description overlay used in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">I used the overlay feature in figma more than i have ever before. Due to the fact that this i time i was design for a larger software and not a website it seemed fulfill a certain need. </p>
+        <span></span>
+        <p class="text">That need was configuration. The users of the software would mainly be system administrators and a lot of the value derived from the software would come from the way the user configured the software. Adding keywords and social media accounts would give the user insights onto new ransomwares and types of attacks. Configuring the dashboards would give him/her the insights needed at a quick glance. Sharing information and delegating responsibility over certain incidents would increase collaboration. Furthermore configuring the infrastructure map (which you will see later on) would increase awareness of ones own system.</p>
+        <span></span>
+        <p class="text">The most complex overlay i created was also an organism. Meaning it used molecules with in it. This was an overlay for the threat and overview page.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/threat-overlay.png" alt="threat overlay used in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">The complexity of this overlay is due to the fact that i had to consist of, among other things, three tabs (history, course of action and observed data) which each had its own table of contents. As i explained earlier it is used to describe incidents found in the table of contents on the threats and overview page.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/threats-desktop.png" alt="threats page in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/overview-desktop.png" alt="overview page in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/threats-overlay.gif" alt="gif of the threat overlay in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">The infrastructure page as i mentioned earlier used multiple overlays and is a design that i am quite fond of myself. It is the page that gives the user an overview of their own system and where attacks happen with in that system.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/infrastructure-map-desktop.png" alt="infrastructure map page in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">The user configures this system themselves using premade or custom made templates. Dragging connections between the nodes to show how the information flows between nodes. The mini-map in the bottom left lets the user know where they are in the map and lets them quickly navigate large systems. The three buttons at the top left corner allows the user to zoom in and out as well as reset the zoom. Right above those buttons the user can search for tags which are applied to the nodes and can also access a full list of tags. </p>
+        <span></span>
+        <p class="text">Clicking a node will make an overlay appear that gives the user a description of that node including incidents/social media posts related to the node and the list of tags connected to the node.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/node-description.gif" alt="gif of the node description overlay in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">On the far right side there is a tab with three buttons. The arrow expands the bar to show all current templates that the user can drag onto the map to create a new node. The + icon opens an overlay that lets the user add a new template and the last icon lets the user import a template increasing the potential to collaborate.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/map-side-bar.gif" alt="gif of the side bar overlay in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">One of the pages that i created which was not in the prototype Rheasoft had build was the social media dashboard page.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/dashboard-desktop.png" alt="dashboard page in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/dashboard-edit-dashboard.gif" alt="gif of the edit dashboard overlay in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/dashboard-side-bar.gif" alt="gif of the dashboard side bar overlay in the cs-aware project" class="centered-img">
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <p class="text">There are three main lessons i will bring with me from this project is first of all the design discipline is really important. During the last week of my internship i promised to deliver three pages for the full version of the software which were not going to be included in the lite version. These were the threats page, the overview page and the information sharing page. Due to the small time frame i ended up unintentionally desiging without the atomic design philosophy in mind which ended up costing me in the end when i wanted to redesign parts of the table contents. Changing a color on the header of table of contents suddenly took way more time than it had to. I also were too careless with how i spaced elements. I should have followed a rule of how much spacing i used which sometimes ended up being judged only by feeling instead of by feeling and then commonality.</p>
+        <span></span>
+        <p class="text">The second lesson is to think HTML and CSS way more when i design. This means using the automatic layout function way more than i already do as it will give a better CSS output from figma elements. It also means using frames for creating boxes instead of rectangles as this mimics the &lt;div&gt; &lt;/div&gt; in HTML better.</p>
+        <span></span>
+        <p class="text">The third lesson is a better understanding of how to deliver a design to developers. Since no one one the team had experience with it i had to rely on internet articles and experience from people with in my network. In the end i found that i went too much in to detail and wasted some time that i could have really used earlier on. But i am now much wiser about how to deliver a design and how to design for delivery as well. </p>
+        <span></span>
+        <p class="text">I could explain this project in full details but i am afraid i might bore you to death. But i will show the rest of the pages here and if you want to hear more i suggest you invite me for a cup of coffee.</p>
+    </div>
+    <div class="padding"></div>
+    <div class="grid">
+        <img src="images/cs-aware/information-sharing-desktop.png" alt="information sharing page in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/some-desktop.png" alt="social media page in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/social-media-post-overlay.gif" alt="gif of the social media post overlay in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/social-media-add-keyword-account.gif" alt="gif of the social media add tracked keywords and accounts overlay in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/about-desktop.png" alt="the about page in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/sign-in-desktop.png" alt="the sign in page in the cs-aware project" class="centered-img">
+        <div class="padding"></div>
+        <img src="images/cs-aware/sign-up-desktop.png" alt="the sign up page in the cs-aware project" class="centered-img">
+    </div>
+
+<!--Bottom contacts-->
+        <div class="padding"></div>
+<div class="grid-nav">
+    <div class="contacts">
+        <p class="bold">Contact me</p>
+        <a href="https://www.linkedin.com/in/mads-emmertsen-398651181/" target="blank">
+            <img src="images/linkedinlogo.png" alt="linkedin logo" class="linkedinlogo">
+        </a>
+        <br>
+        <a href="mailto:madsemmertsen@gmail.com">madsemmertsen@gmail.com</a>
+    </div>
+</div>
+</body>
+</html>
