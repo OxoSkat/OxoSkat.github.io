@@ -15,7 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
 <!--Hamburger knap css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+<link rel="stylesheet" href="carousel.css">
 <script src="hamburger.js"></script>
+<script src="carousel.js"></script>
 <title>Mads Emmertsen Portfolio</title>
 </head>
 <body>
@@ -59,51 +61,55 @@
 <!---->
 <div class="grid">
     <div class="padding"></div>        
-        <h1 class="title">
+        <h1 class="title-half">
             CS-Aware Cybersecurity Platform</h1>
-        <p class="text">During my 2 months internship at Rheasoft I worked on a design for their cyber security platform CS-Aware. A product that stands on a foundation of knowledge gained through the EU project CS-Aware and the current EU project CS-Aware Next. The CS-Aware platform tries to tackle multiple issues identified through the EU projects at once. These include a lack of collaboration and information sharing between critical entities with in a EU country, A lack of insights about ones own system and vulnerabilities with in that system (which does include the people operating with in it). And last but not least the tools to act in time when an incident happens.</p>
+        <p class="text-half">During my 2 months internship at Rheasoft I worked on a design for their cyber security platform CS-Aware. A product that stands on a foundation of knowledge gained through the EU project CS-Aware and the current EU project CS-Aware Next. The CS-Aware platform tries to tackle multiple issues identified through the EU projects at once. These include a lack of collaboration and information sharing between critical entities with in a EU country, A lack of insights about ones own system and vulnerabilities with in that system (which does include the people operating with in it). And last but not least the tools to act in time when an incident happens.</p>
         <span></span>
+        <div class="padding"></div>
         <p class="text">From their first EU project. Rheasoft had build a prototype which I was tasked to redesign and build upon. I decided to build the design for six screen sizes. One for desktops, one for laptops, one for each orientation on tablet and one for each orientation on mobile. </p>
         <span></span>
         <p class="text">
             The final design ended up being in total 54 screen designs and 32 overlays across 6 resolutions. Beneath you will see the final design for desktop and after that I will take you through the work process.</p>
-        <div class="padding"></div>
+            <div class="images-slideshow">
+                <div class="imageSlides fade" style="display: block;">
+                    <img src="images/cs-aware/overview-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/threats-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/information-sharing-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/dashboard-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/some-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/infrastructure-map-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/about-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/sign-in-desktop.png">
+                </div>
+                <div class="imageSlides fade">
+                    <img src="images/cs-aware/sign-up-desktop.png">
+                </div>
+                <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
+                <a class="slider-btn next" onclick="setSlides(1)">❯</a>
+        </div>
+            <div class="padding"></div>
     </div>
-    <div class="grid">
-        <h2 class="subtitle-centered">Overview Page</h2>
-        <img src="images/cs-aware/overview-desktop.png" alt="the overview page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">Threats Page</h2>
-        <img src="images/cs-aware/threats-desktop.png" alt="the threats page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">Information Sharing Page</h2>
-        <img src="images/cs-aware/information-sharing-desktop.png" alt="the information sharing page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">Dashboard Page</h2>
-        <img src="images/cs-aware/dashboard-desktop.png" alt="the dashboard page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">Social Media Page</h2>
-        <img src="images/cs-aware/some-desktop.png" alt="the social media page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">Infrastructure Map Page</h2>
-        <img src="images/cs-aware/infrastructure-map-desktop.png" alt="the infrastructure map page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">About Page</h2>
-        <img src="images/cs-aware/about-desktop.png" alt="the about page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">Sign In Page</h2>
-        <img src="images/cs-aware/sign-in-desktop.png" alt="the sign in page" class="centered-img">
-        <div class="padding"></div>
-        <h2 class="subtitle-centered">Sign Up Page</h2>
-        <img src="images/cs-aware/sign-up-desktop.png" alt="the sign up page" class="centered-img">
-    </div>
-    <div class="padding"></div>
     <div class="grid">
         <h2 class="subtitle">The Work Process</h2>
         <p class="text">After being given an introduction to Rheasoft, CS-Aware and their product I inquired about the types of users that the product was intended for. The main users would be system administrators responsible for larger companies IT-infrastructure. The secondary users would be manager who would use the product for reporting to their superiors about the state of their IT-infrastructure and incident handling.</p>
         <span></span>
         <p class="text">I then studied Rheasoft’s previous demo. This gave me a better overview of the features which was intended to be in the design. It’s important to state that the CS-Aware product is still in its early stages of development and some of the features might not make it through to the end product. Therefore I decided to include most features in my design and added a few which we had been discussing as potential viable features for the end product. This included a page for dashboards regarding social media posts and keywords/accounts being tracked and a sign in and sign up page. </p>
         <span></span>
+        <h2 class="subtitle">Wireframing</h2>
         <p class="text">I started my design by making a set of wireframes for mobile and for desktop in order to get an idea of how i wanted elements to be placed in the screens.</p>
         <div class="padding"></div>
         <img src="images/cs-aware/wireframe-desktop-dashboard.png" alt="wireframe of the dashboard page for desktop" class="centered-img">
@@ -120,6 +126,7 @@
 </div>
 <div class="padding"></div>
 <div class="grid">
+    <h2 class="subtitle">Atomic design, building with components</h2>
     <p class="text">After wireframing I started to set up my design document. I had decided to use the atomic design philosophy which i had gotten acquainted with during my time at Motostore. I started by creating the small building blocks of the design beginning with the basics such as colors and typography.</p>
     <div class="padding"></div>
     <img src="images/cs-aware/typography.png" alt="typography used in the cs-aware project" class="centered-img">
@@ -154,6 +161,7 @@
     <span></span>
     <p class="text">That need was configuration. The users of the software would mainly be system administrators and a lot of the value derived from the software would come from the way the user configured the software. Adding keywords and social media accounts would give the user insights onto new ransomwares and types of attacks. Configuring the dashboards would give him/her the insights needed at a quick glance. Sharing information and delegating responsibility over certain incidents would increase collaboration. Furthermore configuring the infrastructure map (which you will see later on) would increase awareness of ones own system.</p>
     <span></span>
+    <h2 class="subtitle">Overlays</h2>
     <p class="text">The most complex overlay I created was also an organism. Meaning it used molecules with in it. This was an overlay for the threat and overview page.</p>
     <div class="padding"></div>
     <img src="images/cs-aware/threat-overlay.png" alt="threat overlay used in the cs-aware project" class="large-img">
