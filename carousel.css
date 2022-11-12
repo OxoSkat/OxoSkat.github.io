@@ -52,3 +52,15 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  @media only screen and (max-width: 767px) {
+    .images-slideshow {
+      grid-column: 1 / 4;
+      grid-row: 10 / 11;
+    }
+    .previous {
+      left: 5%;
+    }
+    .next {
+      right: 5%;
+    }
+  }

@@ -520,6 +520,20 @@ li {
       font-size: 20px;
 
    }
+   .text-middle {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+   }
+   .text-middle-two {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+   }
+   .tag-text-one {
+      grid-column: 1 / 2;
+   }
+   .tag-text-two {
+      grid-column: 2 / 4;
+   }
    /** Navigation **/
    .grid-nav {
       display: grid;
@@ -653,12 +667,7 @@ li {
    grid-column: 1 / 4;
    margin-top: -5%;
 }
-.text {
-   grid-column: 1 / 4;
-}
-.text-middle {
-   grid-column: 1 / 4;
-}
+
 }
 
 @media only screen and (min-width: 1601px) {
