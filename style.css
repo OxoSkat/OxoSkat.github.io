@@ -142,6 +142,10 @@ li {
 /** **/
 
 /** Navigation **/
+::selection {
+   background: rgb(187, 0, 0);
+   color: white;
+ }
  p {
     font-family: "Raleway", sans-serif;
  }
