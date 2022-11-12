@@ -11,11 +11,11 @@
   /* Our main images-slideshow container */
   .images-slideshow {
     grid-column: 7 / 12;
-    grid-row: 3 / 4;
+    grid-row: 3 / 5;
     max-width: 1200px;
     position: relative;
-    margin: auto;
     box-shadow: 5px 10px 18px rgba(113, 113, 113, 0.5);
+    align-self: center;
   }
    
   /*Style for ">" next and "<" previous buttons */
@@ -35,7 +35,7 @@
     background-color: transparent;
     border-radius: 50%;
   }
-   
+
   /* setting the position of the previous button towards left */
   .previous {
     left: -5%;
@@ -51,3 +51,4 @@
     color: rgb(255, 253, 253);
     background-color: rgba(0, 0, 0, 0.8);
   }
+

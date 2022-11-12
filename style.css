@@ -12,13 +12,13 @@
  }
  a:link {
    text-decoration: none;
-   color:rgb(81, 76, 69);
+   color:rgb(34, 34, 34);
  }
 
 
  a:visited {
    text-decoration: none;
-   color:rgb(81, 76, 69);
+   color:rgb(34, 34, 34);
  }
 
  a:hover {
@@ -159,16 +159,31 @@ li {
     font-family: "Raleway", sans-serif;
     font-size: 40px;
     font-weight: 700;
+    color:rgb(34, 34, 34);
  }
  h2 {
    font-family: "Raleway", sans-serif;
    font-size: 48px;
    font-weight: 600;
    text-shadow: 2px 2px 3px rgb(81, 76, 69);
+   color:rgb(34, 34, 34);
  }
 
-
-
+.tag-text-one {
+   font-family: "Raleway", sans-serif;
+   font-weight: 600;
+   color:rgb(34, 34, 34);
+   text-align: left;
+   grid-column: 3 / 4;
+}
+.tag-text-two {
+   font-family: "Raleway", sans-serif;
+   font-weight: 600;
+   color:rgb(34, 34, 34);
+   justify-content: center;
+   text-align: left;
+   grid-column: 4 / 6;
+}
  .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -184,25 +199,49 @@ li {
    padding-top: 5%;
  }
  .text-middle {
-    grid-column: 3 / 11;
-    text-align: center;
+    grid-column: 4 / 11;
+    text-align: left;
     padding-top: 10%;
     opacity: 0;
-    animation-name: textfadeleft;
+    animation-name: textfadedown;
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    color:rgb(34, 34, 34);
  }
- @keyframes textfadeleft {
+ @keyframes textfadedown {
     0% {
         opacity: 0;
-        transform: translateX(-20px)
+        transform: translateY(-20px)
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
  }
+ .text-middle h1 {
+   margin: 0;
+ }
+ .text-middle-two {
+   grid-column: 4 / 10;
+   text-align: left;
+   opacity: 0;
+   animation-name: textfadeleft;
+   animation-duration: 2s;
+   animation-delay: 2s;
+   animation-fill-mode: forwards;
+   color:rgb(34, 34, 34);
+ }
+ @keyframes textfadeleft {
+   0% {
+       opacity: 0;
+       transform: translateX(-20px)
+   }
+   100% {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
  .project-img-box {
     grid-column: 3 / 11;
     grid-row: 1 / 2;
@@ -277,6 +316,10 @@ li {
 }
 
 /*for about page*/
+.about-img {
+   grid-column: 8 / 13;
+   max-height: 400px;
+}
 .text-about-one {
    grid-column: 3 / 11;
    text-align: left;
@@ -319,7 +362,7 @@ li {
    grid-column: 3 / 10;
 }
 .title-half {
-   grid-column: 3 / 7;
+   grid-column: 3 / 8;
 }
 .subtitle {
    grid-column: 3 / 11;
@@ -418,6 +461,22 @@ li {
    max-height: 400px;
    justify-self: center;
    align-self: center;
+}
+.download-btn {
+   grid-column: 3 / 4;
+   background-color: #222;
+   text-align: center;
+   padding: 10px 2px;
+   border-radius: 8px;
+}
+.download-btn a {
+   color: rgb(255, 251, 246);
+   font-weight: 600;
+}
+
+.download-btn:hover a {
+   color: rgb(187, 0, 0);
+   font-weight: 600;
 }
 @media only screen and (max-width: 767px) {
    h4 {
