@@ -798,6 +798,10 @@ li {
    .textoverimg h2 {
       font-size: 0.9rem;
    }
+   h3 {
+      font-size: 1.2rem;
+   }
+   
    .centered-img, .project-img-box {
       grid-column: 1 / 4;
       max-height: 300px;
@@ -807,6 +811,10 @@ li {
       grid-column: 1 / 4;
       max-width: auto;
       max-height: 600px;
+   }
+   .larger-img {
+      grid-column: 1/4;
+      padding: 0 5%;
    }
    .twoimg-first {
       grid-column: 1 / 4;
