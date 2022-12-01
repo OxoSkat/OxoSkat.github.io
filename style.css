@@ -1024,10 +1024,10 @@ li {
       justify-self: center;
    }
    .text-about-one {
-      grid-column: 4 / 10;
+      grid-column: 3 / 11;
    }
    .text-about-two {
-      grid-column: 4 / 10;
+      grid-column: 3 / 11;
       margin-top: -3%;
    }
 
